@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, intial-scale=">
+        <link rel="stylesheet" href="top.css"/>
+        <title>ポートフォリオ</title>
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar">
+                <h2 class="logo">portfolio</h2>
+                <ul class="menu" >
+                    <li ><a href="top.html">home</a></li>
+                    <li ><a href="profile.html">profile</a></li>
+                    <li><a href="leaning.html">leaning</a></li>
+                    <li><a href="create.html">create</a></li>
+                    <li><a href="question.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <h1 class="title">
+                <br>
+                <span>M</span>
+                <span>y</span>
+                <span>&nbsp:</span>
+                <span>P</span>
+                <span>o</span>
+                <span>r</span>
+                <span>t</span>
+                <span>f</span>
+                <span>o</span>
+                <span>l</span>
+                <span>i</span>
+                <span>o</span>
+            </h1>
+        </div>
+
+        <div class="text-area">
+            <div class="box"></div>
+            <h1 style="text-align: center;">概要</h1>
+            <p class="text">ここでは、自身の自己紹介、学習内容、創作物について取り扱っております。 
+                <br>サイトに関する質問は、お問い合わせまでよろしくお願いいたします。
+                <br>下記のボタンor上記のヘッダーより詳しい内容をご確認ください。
+                <br>
+                <br>※こちらのサイトは、学生が創作したものであり、商用ではありません。
+            </p>
+            <div class="box"></div>
+        </div>
+        <ul class="center">
+        <li><a href="profile.html"><img src="img/プロフィール画像.jpg" class="icon hover"></a></il>
+        <li><a href="leaning.html"><img src="img/leaning.jpg" class="icon1"></a></il>
+        <li> <a href="create.html"><img src="img/create.jpg" class="icon"></a></il>
+    </ul>
+    <div class="box"></div>
+       <p> <a href="question.html" ><img src="img/お問い合わせ.png" class="botton"></a>
+    <div class="box"></div>
+        <script>
+
+            const navbar= document.querySelector(".navbar");
+            const menu = document.querySelector("menu");
+            //ヘッダーがulタグに来たら、ヘッダー固定する
+            window.addEventListener("scroll",()=>{
+                if(window.pageYOffset >=menu.offsetTop){
+                    navbar.classList.add("sticky");
+                }else{
+                    navbar.classList.remove("sticky");
+                }
+            });
+        </script>
+    </body>
+</html>
