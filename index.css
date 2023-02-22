@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Note sans JP",sans-serif;
+}
+.header{
+    width: 100%;
+    height: 60vh;
+    background-image: url("./img/background1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+/*-----ここからタイトル文字のアニメーション設定*/
+@import url('https://fonts.googleapis.com/css2?family=josefin+Sans&display=swap');
+.title{
+    text-align: center;
+    position:absolute;
+    top: 0;
+    right: 0;
+    padding: 13%;
+    margin: 0%;
+    font-size: 60px;
+    overflow: hidden;
+    color: aliceblue;
+    font-family: 'Josefin Sans',sans-serif;
+}
+.title span{
+    transform: translate(0,105%);
+    transition: tranform cubic-bezier(0.215, 0.610, 0.355, 1);
+}
+.title.-visible span{
+    transform: translate(0,0);
+}
+.title span:nth-child(2){transition-delay: 0.06s;}
+.title span:nth-child(3){transition-delay: 0.12s;}
+.title span:nth-child(4){transition-delay: 0.18s;}
+.title span:nth-child(5){transition-delay: 0.24s;}
+.title span:nth-child(6){transition-delay: 0.30s;}
+.title span:nth-child(7){transition-delay: 0.36s;}
+.title span:nth-child(8){transition-delay: 0.42s;}
+.title span:nth-child(9){transition-delay: 0.48s;}
+.title span:nth-child(10){transition-delay: 0.54s;}
+.title span:nth-child(11){transition-delay: 0.6s;}
+.title span:nth-child(12){transition-delay: 0.66s;}
+
+/*-----ここまでタイトル文字のアニメーション*/
+nav{
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+}
+
+.logo{
+    font-size: 3rem;
+    font-weight: 450;
+    opacity: 0.6;
+    background: #235d62;
+    color: aqua;
+}
+
+
+nav ul{
+    background: black;
+    justify-content: space-evenly;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px 30px;
+}
+nav ul li:hover{
+    opacity: 0.5;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.text{
+    text-align: center;
+    padding: 20px 10%;
+}
+
+nav .sticky{
+    position:fixed;
+    left: 0;
+    top: 0;
+    background: #000;
+    color: aliceblue;
+    display: flex;
+}
+
+.icon{
+    width: 450px;
+    height: 600px;
+    display: flex;
+}
+.icon:hover{
+    opacity: 0.6;
+    
+}
+
+  .icon1{
+    width: 400px;
+    height: 500px;
+    display: flex;
+}
+.icon1:hover{
+    opacity: 0.6;
+}  
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+.botton{
+    width: 200px;
+    display:right;
+}
+.botton:hover{
+    opacity: 0.7;
+}
+.center{
+    justify-content: space-around;
+    list-style: none;
+}
+.box{
+    height: 150px;
+}
+
