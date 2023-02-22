@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>お問い合わせ</title>
+        <link rel="stylesheet" href="question.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav class="navbar">
+                <h2 class="logo">お問い合わせ</h2>
+                <ul class="menu" >
+                    <li ><a href="top.html">home</a></li>
+                    <li ><a href="profile.html">profile</a></li>
+                    <li><a href="leaning.html">leaning</a></li>
+                    <li><a href="create.html">create</a></li>
+                    <li><a href="question.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="height"></div>
+        <p class="coment">※こちらはお問い合わせフォームの形のみで、実際の送信はできません。<br>
+            　まことに申し訳ございませんが、ご了承ください。
+        </p>
+        <br>
+        <h1 class="titlename">お問い合わせフォーム</h1>
+
+        <div class="box_con02">
+            <form method="post" action="mail.php">
+            <table class="formTable">
+            
+                <th>確認</th>
+                <td>
+                     <div class="box_br">
+                         <label><input type="radio" name="gender" value="テキスト1">企業</label>
+                    </div>
+                    <div class="box_br">
+                        <label><input type="radio" name="gender" value="テキスト2">個人</label>
+                    </div>
+                </td>
+              </tr>
+              <tr>
+                <th>ご用件</th>
+                <td><select name="ご用件">
+                    <option value="">選択してください</option>
+                    <option value="ご質問・お問い合わせ">ご質問・お問い合わせ</option>
+                    <option value="リンクについて">リンクについて</option>
+                    <option value="感想">感想</option>
+                  </select></td>
+              </tr>
+              <tr>
+                <th>お名前<span>必須</span></th>
+                <td><input size="20" type="text" class="wide" name="お名前" placeholder="山田　太郎" /></td>
+              </tr>
+              <tr>
+                <th>電話番号（半角）<span>必須</span></th>
+                <td><input size="30" type="text" class="wide" name="電話番号" placeholder="090-1234-5678" /></td>
+              </tr>
+              <tr>
+                <th>Mail（半角）</th>
+                <td><input size="30" type="text" class="wide" name="Email" placeholder="Sample1234@gmai.com（Eメールも可能）" /></td>
+              </tr>
+              <tr>
+                <th>お問い合わせ内容<br /></th>
+                <td><textarea name="お問い合わせ内容" cols="50" rows="5" placeholder="ここに内容を詳しく記述してください。"></textarea></td>
+              </tr>
+            </table>
+            <div class="con_pri">
+                <div class="box_pri">
+                    <div class="box_tori">
+                        <h3>商用について</h3>
+                        <p class="txt">こちらの作品は、学生が作成したものであり、商用ではございません。
+                            もしも、商用での販売が確認された場合、ご報告のご協力をお願いいたします。
+                        </p>
+                    </div>
+                    <div class="box_num">
+                        <h4>画像について</h4>
+                        <p class="txt">こちらで使用している画像は全て、著作権フリー及び、自身の写真・イラストの加工、
+                            AIイラストを用いたものであり、他の作品への影響はありません。
+                            また、こちらの画像は商用の販売及び、このサイト外への公開は致しておりません。
+                            万が一、他サイト等で発見した場合は、報告のご協力をよろしくお願いいたします。</p>
+                    </div>
+                    <div class="box_num">
+                        <h4>リンクについて</h4>
+                        <p class="txt">当サイト外へのリンク先のサイトでの問題は、こちらでは対応できかねます。あらかじめご了承をお願いいたします。
+                            また、当サイトおよびリンク先への悪質な行為、暴言等が発覚した場合、通報の場合がございます。マナーを守ってご利用ください</p>
+                    </div>
+                    <div class="box_num">
+                        <h4>個人情報保護について</h4>
+                        <p class="txt">お問い合わせフォームで頂いた個人情報は、他者への販売・貸与は一切いたしません。
+                            質問等の解決もしくは、１か月の保管を行い、その後、通常の場合は情報の破棄を行います。
+                            <br>　例外と致しまして、暴言等、今後もやり取りを行う必要があると判断した場合は、一定期間
+                            の情報保持をいたします。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="box_check">
+                <label>
+                    <input type="checkbox" name="acceptance-714" value="1" aria-invalid="false" class="agree"><span class="check">プライバシーポリシーに同意する</span>
+                </label>
+            </div>
+            <p class="btn">
+                <span><input type="submit" value="　 確認 　" /></span>
+            </p>
+          </form>
+        </div>
+        <p><a href="top.html">トップページに戻る</a></p>
+
+    </body>
+</html>
